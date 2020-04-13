@@ -104,10 +104,10 @@ function setup_maven() {
     sed -i "s|<!-- ### configured mirrors ### -->|$xml|" $HOME/.m2/settings.xml
   fi
 
-  if [ -f "${S2I_SOURCE_DIR}/configuration/settings.xml" ]; then
-    maven_env_args="${maven_env_args} -s ${S2I_SOURCE_DIR}/configuration/settings.xml"
-    echo "Using custom maven settings from ${S2I_SOURCE_DIR}/configuration/settings.xml"
-  fi
+  #if [ -f "${S2I_SOURCE_DIR}/configuration/settings.xml" ]; then
+  #  maven_env_args="${maven_env_args} -s ${S2I_SOURCE_DIR}/configuration/settings.xml"
+  #  echo "Using custom maven settings from ${S2I_SOURCE_DIR}/configuration/settings.xml"
+  #fi
 }
 
 function build_maven() {
