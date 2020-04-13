@@ -17,6 +17,10 @@ oc create -f s2i-fuse75-spring-boot-camel-xml.yml
 oc new-app s2i-fuse75-spring-boot-camel-xml
 ```
 
+- create app from templte locally without create template
+```
+oc new-app -f s2i-fuse75-spring-boot-camel-xml.yml
+```
 
 https://access.redhat.com/documentation/en-us/red_hat_fuse/7.5/html-single/fuse_on_openshift_guide/index#create-project-s2i-source-workflow
 
