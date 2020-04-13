@@ -270,7 +270,7 @@
       displayName: "Image Stream Namespace"
       name: "IMAGE_STREAM_NAMESPACE"
       required: true
-      value: "openshift"
+      value: "mtm-cicd"
     - 
       description: "The secret needed to trigger a build."
       displayName: "Git Build Secret"
