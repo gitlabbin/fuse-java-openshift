@@ -7,6 +7,8 @@ RUN chmod 755 /usr/local/s2i/*
 
 USER 185
 
+COPY settings.xml /opt/jboss/.m2/settings.xml
+
 LABEL io.k8s.description="Corp applications on JBoss Fuse 7" \
       io.k8s.display-name="JBoss Fuse 7 + maven settings" \
       io.openshift.expose-services="8080:http" \
