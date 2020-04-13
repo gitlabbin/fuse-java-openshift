@@ -5,9 +5,9 @@ USER 0
 COPY s2i/assemble /usr/local/s2i/assemble
 RUN chmod 755 /usr/local/s2i/*
 
-USER 185
+COPY settings.xml /home/jboss/.m2/settings.xml
 
-COPY settings.xml /opt/jboss/.m2/settings.xml
+USER 185
 
 LABEL io.k8s.description="Corp applications on JBoss Fuse 7" \
       io.k8s.display-name="JBoss Fuse 7 + maven settings" \
